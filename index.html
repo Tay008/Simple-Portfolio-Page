@@ -1,29 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Portfolio Page</title>
-</head>
-<body>
-    <h1>Tayyab Saghir</h1>
-    <div>
-        <div class="nav-box">
-            <img src="" alt="">
-            <p></p>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #2d2d2d;
+        color: whitesmoke;
+        min-height: 400vh;
+      }
+      .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+      }
+      /* .nav-sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      } */
+      .nav-box {
+        transition: width 0.2s ease-in, height 0.2s ease-in;
+        height: 10vh;
+        display: flex;
+        gap: 10px;
+        margin: 40px;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 10px;
+        border-radius: 10%;
+        width: fit-content;
+      }
+
+      img {
+        height: 10vh;
+        margin: 10px 5px;
+      }
+      .nav-text {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+        word-wrap: break-word;
+      }
+      .nav-box:hover .nav-text {
+        opacity: 1;
+      }
+      .nav-box:hover {
+        height: 8vh;
+        width: fit-content;
+        background-color: #3b82f6;
+        transition: width 0.2s ease-in, height 0.2s ease-in;
+        cursor: pointer;
+      }
+      .hero {
+        display: flex;
+        flex-direction: column;
+      }
+      .hero-pic {
+        height: 60vh;
+        width: 30vw;
+      }
+      .left {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: end;
+      }
+      h2 {
+        background-color: #3b82f6;
+        font-size: 2em;
+        margin-left: 10%;
+        width: fit-content;
+      }
+      p {
+        width: 70%;
+        margin: 0 auto;
+        background-color: #3b82f6;
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="nav-sidebar">
+        <div class="nav-box" class="left">
+          <p class="nav-text">Home</p>
+          <img src="download (1).jpg" alt="home image" />
         </div>
         <div class="nav-box">
-            <img src="" alt="">
-            <p></p>
+          <p class="nav-text">About</p>
+          <img src="download.jpg" alt="" />
         </div>
         <div class="nav-box">
-            <img src="" alt="">
-            <p></p>
+          <p class="nav-text">Work</p>
+          <img src="download (2).jpg" alt="" />
+        </div>
+        <!-- <div class="nav-box" class="contact-img">
+          <p class="nav-text">Contacts</p>
+          <img src="download (3).jpg" alt="" />
+        </div> -->
+      </div>
+      <div class="hero">
+        <h1>Tayyab Saghir</h1>
+        <img class="hero-pic" src="main-picture.jpg" alt="" />
+      </div>
+      <div class="nav-sidebar">
+        <div class="nav-box">
+          <a href="https://github.com/Tay008">
+            <img src="download.png" alt="" />
+          </a>
+          <p class="nav-text">Github</p>
         </div>
         <div class="nav-box">
-            <img src="" alt="">
-            <p></p>
+          <img src="download-1.jpg" alt="" />
+          <p class="nav-text">Instagram</p>
         </div>
+        <div class="nav-box">
+          <img src="download-2.png" alt="" />
+          <p class="nav-text">Youtube</p>
+        </div>
+      </div>
     </div>
-</body>
+    <div>
+      <h2>About: &nbsp;</h2>
+      <p>
+        I'm a passionate and self-driven individual with a growing foundation in
+        web development, specializing in HTML, CSS, and JavaScript. I thrive on
+        solving real-world problems through clean, efficient code and
+        user-friendly design. My approach combines creativity, discipline, and a
+        strong commitment to continuous learning. Whether working independently
+        or as part of a team, I value clear communication, attention to detail,
+        and pushing beyond my limits. I'm currently focused on mastering modern
+        frameworks like React.js and Tailwind CSS while building a strong grip
+        on Python and problem-solving. My ultimate goal is to create impactful
+        digital experiences that make a difference.
+      </p>
+    </div>
+  </body>
 </html>
